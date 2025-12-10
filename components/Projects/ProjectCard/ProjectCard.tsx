@@ -18,10 +18,11 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           </h2>
         </CardTitle>
       </CardHeader>
-      <CardContent className="h-16">
+      <CardContent className="h-72">
+        <img src={project.imageLink || ""} />
         <p>{project.description}</p>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="flex flex-col">
         {project.link && (
           <a
             href={project.link}

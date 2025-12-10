@@ -2,36 +2,43 @@
   {
     "name": "Evolucion Medica",
     "link": "https://github.com/JoaquinStechina/evolucion-medica",
-    "description": "Repository for Evolucion Medica project under Rocking supervision."
+    "description": "Repository for Evolucion Medica project under Rocking supervision.",
+    "imageLink": "/ProjectImages/evolucion-medica.png"
   },
   {
     "name": "Stock Managment App",
     "link": null,
-    "description": "Repository for the Retamozo Provisioning management system. It allows control of stock through barcode and also it keeps clients tabs."
+    "description": "Repository for the Retamozo Provisioning management system. It allows control of stock through barcode and also it keeps clients tabs.",
+    "imageLink": "/ProjectImages/stock-management-app.png"
   },
   {
     "name": "Compound Interest Rate Calculator",
     "link": "https://github.com/JoaquinStechina/compound-interest-rate-calculator",
-    "description": "Small web app for calculating the compound interest rate gained for a predetermined set of time."
+    "description": "Small web app for calculating the compound interest rate gained for a predetermined set of time.",
+    "imageLink": "/ProjectImages/compound-interest-rate.png"
   },
   {
     "name": "Secret Friend",
     "link": "https://github.com/JoaquinStechina/Challenge-Amigo-Secreto-Alura",
-    "description": "A simple application developed under the Oracle Next Education program, for organizing secret friend draws among friends."
+    "description": "A simple application developed under the Oracle Next Education program, for organizing secret friend draws among friends.",
+    "imageLink": "/ProjectImages/secret-friend.png"
   },
   {
     "name": "Digital Booking",
     "link": "https://github.com/JoaquinStechina/DigitalBooking",
-    "description": "Repository for the final integration project of Digital House."
+    "description": "Repository for the final integration project of Digital House.",
+    "imageLink": "/ProjectImages/digital-booking.png"
   },
   {
     "name": "Old Portfolio",
     "link": "https://github.com/JoaquinStechina/Portfolio",
-    "description": "My old personal portfolio."
+    "description": "My old portfolio. Made with Next.js, and Tailwind.",
+    "imageLink": "/ProjectImages/old-portfolio.png"
   },
   {
     "name": "Angular ToDo App",
     "link": "https://github.com/JoaquinStechina/Angular-ToDo-App",
-    "description": "Small ToDo web app using Angular 20 and TypeScript."
+    "description": "Small ToDo web app using Angular 20 and TypeScript.",
+    "imageLink": "/ProjectImages/todo-app.jpg"
   }
 ]
