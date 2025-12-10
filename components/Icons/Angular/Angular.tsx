@@ -1,0 +1,33 @@
+import { SVGProps } from "@/src/types/SVGProps";
+
+const Angular: React.FC<SVGProps> = ({
+  color = "#E23237",
+  height = 50,
+  width = 50,
+  size,
+}) => {
+  return (
+    <svg
+      fill={color}
+      viewBox="0 0 32 32"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      height={height || width || size}
+      width={width || height || size}
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <title>angular</title>{" "}
+        <path d="M24.826 23.885h-3.297l-1.777-4.377h-7.507l-1.777 4.379h-3.299l8.83-19.571zM15.999 1.004l-14.145 4.976 2.157 18.458 11.989 6.557 11.992-6.551 2.154-18.462-14.147-4.977zM13.414 16.806h5.171l-2.587-6.133z"></path>{" "}
+      </g>
+    </svg>
+  );
+};
+
+export default Angular;

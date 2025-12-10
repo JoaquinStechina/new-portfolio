@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Evolucion Medica",
+    "link": "https://github.com/JoaquinStechina/evolucion-medica",
+    "description": "Repository for Evolucion Medica project under Rocking supervision."
+  },
+  {
+    "name": "Stock Managment App",
+    "link": null,
+    "description": "Repository for the Retamozo Provisioning management system. It allows control of stock through barcode and also it keeps clients tabs."
+  },
+  {
+    "name": "Compound Interest Rate Calculator",
+    "link": "https://github.com/JoaquinStechina/compound-interest-rate-calculator",
+    "description": "Small web app for calculating the compound interest rate gained for a predetermined set of time."
+  },
+  {
+    "name": "Secret Friend",
+    "link": "https://github.com/JoaquinStechina/Challenge-Amigo-Secreto-Alura",
+    "description": "A simple application developed under the Oracle Next Education program, for organizing secret friend draws among friends."
+  },
+  {
+    "name": "Digital Booking",
+    "link": "https://github.com/JoaquinStechina/DigitalBooking",
+    "description": "Repository for the final integration project of Digital House."
+  },
+  {
+    "name": "Old Portfolio",
+    "link": "https://github.com/JoaquinStechina/Portfolio",
+    "description": "My old personal portfolio."
+  },
+  {
+    "name": "Angular ToDo App",
+    "link": "https://github.com/JoaquinStechina/Angular-ToDo-App",
+    "description": "Small ToDo web app using Angular 20 and TypeScript."
+  }
+]
