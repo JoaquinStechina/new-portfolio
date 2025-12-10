@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const BackendCard: React.FC = () => {
   return (
-    <Card className="w-48 border-primary">
+    <Card className="w-48 border-primary rounded-l-2xl">
       <CardHeader>
         <CardTitle className="text-xl flex justify-center items-center">
           <Database color="white" />

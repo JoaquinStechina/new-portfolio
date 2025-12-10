@@ -2,31 +2,31 @@
   {
     "name": "Evolucion Medica",
     "link": "https://github.com/JoaquinStechina/evolucion-medica",
-    "description": "Repository for Evolucion Medica project under Rocking supervision.",
+    "description": "Generic web page for Evolucion Medica project under Rocking supervision, it allows to connect to different URLs and generate a web page for EV's clients. Made using React, CSS, and TypeScript.",
     "imageLink": "/ProjectImages/evolucion-medica.png"
   },
   {
     "name": "Stock Managment App",
     "link": null,
-    "description": "Repository for the Retamozo Provisioning management system. It allows control of stock through barcode and also it keeps clients tabs.",
+    "description": "Repository for the Retamozo Provisioning management system. It allows control of stock through barcode and also it keeps clients tabs. Made with Next.js, Tailwind, Java, and Spring.",
     "imageLink": "/ProjectImages/stock-management-app.png"
   },
   {
     "name": "Compound Interest Rate Calculator",
     "link": "https://github.com/JoaquinStechina/compound-interest-rate-calculator",
-    "description": "Small web app for calculating the compound interest rate gained for a predetermined set of time.",
+    "description": "Small web app for calculating the compound interest rate gained for a predetermined set of time. Made with Next.js, Tailwind, and TypeScript",
     "imageLink": "/ProjectImages/compound-interest-rate.png"
   },
   {
     "name": "Secret Friend",
     "link": "https://github.com/JoaquinStechina/Challenge-Amigo-Secreto-Alura",
-    "description": "A simple application developed under the Oracle Next Education program, for organizing secret friend draws among friends.",
+    "description": "A simple application developed under the Oracle Next Education program, for organizing secret friend draws among friends. Made with just HTML, CSS, and JavaScript",
     "imageLink": "/ProjectImages/secret-friend.png"
   },
   {
     "name": "Digital Booking",
     "link": "https://github.com/JoaquinStechina/DigitalBooking",
-    "description": "Repository for the final integration project of Digital House.",
+    "description": "Repository for the final integration project of Digital House. Made with React, CSS, JavaScript, Java, Spring, and MySQL.",
     "imageLink": "/ProjectImages/digital-booking.png"
   },
   {

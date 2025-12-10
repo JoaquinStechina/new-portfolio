@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const DesignCard: React.FC = () => {
   return (
-    <Card className="w-48 border-primary">
+    <Card className="w-48 border-primary rounded-r-2xl">
       <CardHeader>
         <CardTitle className="text-xl flex justify-center items-center">
           <CSS color="white" />
