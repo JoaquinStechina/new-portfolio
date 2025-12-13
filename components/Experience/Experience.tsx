@@ -1,3 +1,6 @@
+import Globant from "../Icons/Globant/Globant";
+import JPSystems from "../Icons/JPSystems/JPSystems";
+import UTN from "../Icons/UTN/UTN";
 import {
   Accordion,
   AccordionContent,
@@ -22,7 +25,12 @@ const Experience: React.FC = () => {
           value="item-1"
           className="rounded-t-2xl bg-[var(--card)] p-2"
         >
-          <AccordionTrigger>College Auxiliary Professor</AccordionTrigger>
+          <AccordionTrigger>
+            <span className="flex items-center gap-2">
+              <UTN size={35} />
+              College Auxiliary Professor
+            </span>
+          </AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>
               Our flagship product combines cutting-edge technology with sleek
@@ -36,7 +44,12 @@ const Experience: React.FC = () => {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2" className="bg-[var(--card)] p-2">
-          <AccordionTrigger>Web UI Developer</AccordionTrigger>
+          <AccordionTrigger>
+            <span className="flex items-center gap-2">
+              <Globant size={35} />
+              Web UI Developer
+            </span>
+          </AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>
               We offer worldwide shipping through trusted courier partners.
@@ -53,7 +66,12 @@ const Experience: React.FC = () => {
           value="item-3"
           className="rounded-b-2xl bg-[var(--card)] p-2"
         >
-          <AccordionTrigger>Frontend Developer</AccordionTrigger>
+          <AccordionTrigger>
+            <span className="flex items-center gap-2">
+              <JPSystems size={35} />
+              Frontend Developer
+            </span>
+          </AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>
               We stand behind our products with a comprehensive 30-day return
