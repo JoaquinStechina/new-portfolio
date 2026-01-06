@@ -1,5 +1,6 @@
 import Globant from "../Icons/Globant/Globant";
 import JPSystems from "../Icons/JPSystems/JPSystems";
+import Rocking from "../Icons/Rocking/Rocking";
 import UTN from "../Icons/UTN/UTN";
 import {
   Accordion,
@@ -27,6 +28,24 @@ const Experience: React.FC = () => {
         >
           <AccordionTrigger>
             <span className="flex items-center gap-2">
+              <Rocking size={35} />
+              Web UI Developer
+            </span>
+          </AccordionTrigger>
+          <AccordionContent className="flex flex-col gap-4 text-balance">
+            <p>
+              I was tasked with designing, building, and delivering a web app to
+              Evolucion Medica. The app was designed to change the data shown
+              based on the URL, and thus this proyect also needed for the web
+              app to be generic enough to handle all the different enviroments.
+            </p>
+            <p>👨‍💻 React - Typescript - CSS</p>
+            <p>📅 November 2025 - December 2025</p>
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2" className="bg-[var(--card)] p-2">
+          <AccordionTrigger>
+            <span className="flex items-center gap-2">
               <UTN size={35} />
               College Auxiliary Professor
             </span>
@@ -43,7 +62,7 @@ const Experience: React.FC = () => {
             </p>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-2" className="bg-[var(--card)] p-2">
+        <AccordionItem value="item-3" className="bg-[var(--card)] p-2">
           <AccordionTrigger>
             <span className="flex items-center gap-2">
               <Globant size={35} />
@@ -63,7 +82,7 @@ const Experience: React.FC = () => {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem
-          value="item-3"
+          value="item-4"
           className="rounded-b-2xl bg-[var(--card)] p-2"
         >
           <AccordionTrigger>
