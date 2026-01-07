@@ -5,7 +5,7 @@
     "jobs": [
       {
         "jobTitle": "Web UI Developer",
-        "description": "Designed, built, and delivered a web app to Evolucion Medica. The app was designed to change the data shown based on the URL, and thus this proyect also needed for the web app to be generic enough to handle all the different enviroments.",
+        "description": "Designed, built, and delivered a web app to Evolucion Medica. The app was designed to change the data shown based on the URL, and thus this proyect also needed for the web app to be generic enough to handle all the different enviroments. Clients can use the web app to manage, schedule, and request appointments.",
         "technologies": [
           "React",
           "React Router",
@@ -27,8 +27,8 @@
     "jobs": [
       {
         "jobTitle": "College Auxiliary Professor",
-        "description": "I was tasked with designing, building, and delivering a web app to Evolucion Medica. The app was designed to change the data shown based on the URL, and thus this proyect also needed for the web app to be generic enough to handle all the different enviroments.",
-        "technologies": ["React", "TypeScript", "CSS"],
+        "description": "Assisted in teaching programming concepts, complementing the explanations of the lead teacher and providing personalized support to students in solving problems and practical exercises.",
+        "technologies": ["JavaScript", "NodeJS"],
         "startMonth": "August",
         "startYear": "2025",
         "endMonth": null,
@@ -81,7 +81,7 @@
     "jobs": [
       {
         "jobTitle": "Frontend Developer",
-        "description": "Desarrollo de UI para JPSystem. Aplicación web para controlar el stock y gestionar clientes para negocio de Avellaneda; desarrollada con Next.js, JavaScript y Tailwind.",
+        "description": "UI development for JPSystem. Web application to control stock and manage customers for businesses, combining entry and search of products by barcode; developed with Next.js, JavaScript and Tailwind.",
         "technologies": [
           "Next.js",
           "React",
