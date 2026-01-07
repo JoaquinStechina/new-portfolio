@@ -1,7 +1,7 @@
 import Skills from "@/components/Skills/Skills";
 import MainTitle from "../../components/MainTitle/MainTitle";
 import Projects from "@/components/Projects/Projects";
-import Experience from "@/components/Experience/Experience";
+import Experiences from "@/components/Experiences/Experiences";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <MainTitle />
       <Skills />
       <Projects />
-      <Experience />
+      <Experiences />
     </main>
   );
 }

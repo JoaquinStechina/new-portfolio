@@ -1,0 +1,101 @@
+[
+  {
+    "icon": "Rocking",
+    "company": "Rocking",
+    "jobs": [
+      {
+        "jobTitle": "Web UI Developer",
+        "description": "Designed, built, and delivered a web app to Evolucion Medica. The app was designed to change the data shown based on the URL, and thus this proyect also needed for the web app to be generic enough to handle all the different enviroments.",
+        "technologies": [
+          "React",
+          "React Router",
+          "TypeScript",
+          "HTML",
+          "CSS",
+          "Tanstack Query"
+        ],
+        "startMonth": "November",
+        "startYear": "2025",
+        "endMonth": "December",
+        "endYear": "2025"
+      }
+    ]
+  },
+  {
+    "icon": "UTN",
+    "company": "Universidad Tecnologica Nacional",
+    "jobs": [
+      {
+        "jobTitle": "College Auxiliary Professor",
+        "description": "I was tasked with designing, building, and delivering a web app to Evolucion Medica. The app was designed to change the data shown based on the URL, and thus this proyect also needed for the web app to be generic enough to handle all the different enviroments.",
+        "technologies": ["React", "TypeScript", "CSS"],
+        "startMonth": "August",
+        "startYear": "2025",
+        "endMonth": null,
+        "endYear": null
+      }
+    ]
+  },
+  {
+    "icon": "Globant",
+    "company": "Globant",
+    "jobs": [
+      {
+        "jobTitle": "Web UI Developer",
+        "description": "Worked on the refactor of BBVA bank's mobile app under Globant's supervision. The refactor was from Polymorph to Lit Element for their mobile app.",
+        "technologies": [
+          "Lit",
+          "Polymorph",
+          "TypeScript",
+          "CSS",
+          "Jira",
+          "HTML"
+        ],
+        "startMonth": "January",
+        "startYear": "2025",
+        "endMonth": "March",
+        "endYear": "2025"
+      },
+      {
+        "jobTitle": "Web UI Developer",
+        "description": "Worked on 'Academy' project, an internal management tool, for Globant's DOJO enviroment. I was responsible for UI creation, unit testing, and correct connection with enterprise APIs.",
+        "technologies": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Jira",
+          "Mock Service Worker (MSW)",
+          "Axios"
+        ],
+        "startMonth": "October",
+        "startYear": "2024",
+        "endMonth": "January",
+        "endYear": "2025"
+      }
+    ]
+  },
+  {
+    "icon": "JPSystems",
+    "company": "JPSystem",
+    "jobs": [
+      {
+        "jobTitle": "Frontend Developer",
+        "description": "Desarrollo de UI para JPSystem. Aplicación web para controlar el stock y gestionar clientes para negocio de Avellaneda; desarrollada con Next.js, JavaScript y Tailwind.",
+        "technologies": [
+          "Next.js",
+          "React",
+          "JavaScript",
+          "Tailwind CSS",
+          "Tanstack",
+          "HTML",
+          "Axios"
+        ],
+        "startMonth": "August",
+        "startYear": "2023",
+        "endMonth": "January",
+        "endYear": "2024"
+      }
+    ]
+  }
+]

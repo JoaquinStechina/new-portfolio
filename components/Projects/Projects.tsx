@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className="flex flex-col justify-center items-center w-3/4"
+      className="flex flex-col justify-center items-center w-3/4 mt-[5%] mb-[5%]"
     >
       <h1 className="text-4xl mb-8">My Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
