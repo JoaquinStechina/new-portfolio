@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,7 +16,6 @@ import {
 import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
-  // Estados para el formulario
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,7 +28,6 @@ const Contact: React.FC = () => {
     message: string;
   }>({ type: null, message: "" });
 
-  // Tus credenciales de EmailJS - reemplázalas con las tuyas
   const EMAILJS_CONFIG = {
     serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
     templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
@@ -65,19 +63,17 @@ const Contact: React.FC = () => {
     setStatus({ type: null, message: "" });
 
     try {
-      // Validación básica
       if (!formData.name || !formData.email || !formData.message) {
         throw new Error("Por favor completa todos los campos");
       }
 
-      // Configurar los parámetros para la plantilla de EmailJS
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
-        to_email: "joaquinstechina12@gmail.com", // Tu email de destino
-        to_name: "Joaquín", // Tu nombre
-        reply_to: formData.email, // Para que puedas responder directamente
+        to_email: "joaquinstechina12@gmail.com",
+        to_name: "Joaquín",
+        reply_to: formData.email,
         date: new Date().toLocaleDateString("es-ES", {
           year: "numeric",
           month: "long",
@@ -87,7 +83,6 @@ const Contact: React.FC = () => {
         }),
       };
 
-      // Enviar email usando EmailJS
       const response = await emailjs.send(
         EMAILJS_CONFIG.serviceId,
         EMAILJS_CONFIG.templateId,
@@ -95,35 +90,30 @@ const Contact: React.FC = () => {
         EMAILJS_CONFIG.publicKey
       );
 
-      // Éxito
       setStatus({
         type: "success",
         message: "¡Message sent! I'll answer you soon.",
       });
 
-      // Limpiar formulario
       setFormData({
         name: "",
         email: "",
         message: "",
       });
 
-      // Limpiar mensaje después de 5 segundos
       setTimeout(() => {
         setStatus({ type: null, message: "" });
       }, 5000);
     } catch (error) {
       console.error("Error al enviar el email:", error);
 
-      // Mensaje de error personalizado
-      let errorMessage =
-        "Hubo un error al enviar el mensaje. Inténtalo de nuevo.";
+      let errorMessage = "There was an error sending the message. Try again.";
 
       if (error instanceof Error) {
         if (error.message.includes("Por favor completa")) {
           errorMessage = error.message;
         } else if (error.message.includes("Network Error")) {
-          errorMessage = "Error de conexión. Verifica tu internet.";
+          errorMessage = "Connection error. Check your internet network.";
         }
       }
 
@@ -148,9 +138,7 @@ const Contact: React.FC = () => {
     >
       <div className="w-full max-w-lg space-y-8">
         <div className="text-center space-y-2">
-          <h1 className="text-3xl font-bold text-[var(--foreground)]">
-            My Contact
-          </h1>
+          <h1 className="text-4xl mb-2">My Contact</h1>
           <p className="text-[var(--foreground)] opacity-70">
             Do you have a project in mind? Let's talk.
           </p>

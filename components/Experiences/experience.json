@@ -27,7 +27,7 @@
     "jobs": [
       {
         "jobTitle": "College Auxiliary Professor",
-        "description": "Assisted in teaching programming concepts, complementing the explanations of the lead teacher and providing personalized support to students in solving problems and practical exercises.",
+        "description": "Teaching programming concepts, complementing the explanations of the lead teacher and providing personalized support to students in solving problems and practical exercises.",
         "technologies": ["JavaScript", "NodeJS"],
         "startMonth": "August",
         "startYear": "2025",
