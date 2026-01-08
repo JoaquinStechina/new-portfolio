@@ -14,6 +14,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import Whatsapp from "../Icons/Whatsapp/Whatsapp";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -41,7 +42,7 @@ const Contact: React.FC = () => {
       href: "mailto:joaquinstechina12@gmail.com",
     },
     {
-      icon: <Phone className="h-4 w-4" />,
+      icon: <Whatsapp size={20} color="white" />,
       text: "+54 9 3482-204125",
       href: "https://wa.me/+543482204125",
     },
@@ -144,7 +145,6 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        {/* Información de contacto */}
         <div className="flex flex-wrap justify-center gap-4">
           {contactInfo.map((info, index) => (
             <a
@@ -160,7 +160,6 @@ const Contact: React.FC = () => {
           ))}
         </div>
 
-        {/* Mensajes de estado */}
         {status.type && (
           <div
             className={`p-4 rounded-2xl border-2 ${
@@ -180,7 +179,6 @@ const Contact: React.FC = () => {
           </div>
         )}
 
-        {/* Formulario */}
         <Card className="border-2 border-[var(--primary)] bg-[var(--card)] rounded-2xl">
           <CardContent className="pt-6">
             <form onSubmit={handleSubmit} className="space-y-4">

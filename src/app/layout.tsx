@@ -9,7 +9,7 @@ const myFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Joaquin Stechina",
+  title: "Portfolio - Joaquin Stechina",
   description: "Portfolio de Joaquin Stechina",
 };
 
