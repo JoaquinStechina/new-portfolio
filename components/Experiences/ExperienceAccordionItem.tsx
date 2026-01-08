@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 import { cn } from "@/lib/utils";
+import { Badge } from "../ui/badge";
 
 const ExperienceAccordionItem: React.FC<ExperienceAccordionItemProps> = ({
   value,
@@ -17,7 +18,7 @@ const ExperienceAccordionItem: React.FC<ExperienceAccordionItemProps> = ({
       value={value}
       className={cn(`bg-[var(--card)] p-2`, rounded)}
     >
-      <AccordionTrigger>
+      <AccordionTrigger className="cursor-pointer">
         <span className="flex items-center gap-2 text-xl">
           {IconComponent && <IconComponent size={50} />}
           {experience.company}
@@ -49,14 +50,13 @@ const ExperienceAccordionItem: React.FC<ExperienceAccordionItemProps> = ({
               <div className="flex flex-wrap items-center gap-2">
                 <div className="flex flex-wrap gap-2">
                   {job.technologies.map((tech, id) => (
-                    <span
+                    <Badge
+                      className="text-md"
+                      variant="outline"
                       key={"techKey" + id}
-                      className="px-3 py-1
-                               text-[var(--primary)] rounded-full text-sm font-medium
-                               border border-[var(--primary)] border-opacity-20"
                     >
                       {tech}
-                    </span>
+                    </Badge>
                   ))}
                 </div>
               </div>
