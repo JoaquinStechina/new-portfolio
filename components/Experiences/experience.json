@@ -5,7 +5,7 @@
     "jobs": [
       {
         "jobTitle": "Web UI Developer",
-        "description": "Designed, built, and delivered a web app to Evolucion Medica. The app was designed to change the data shown based on the URL, and thus this proyect also needed for the web app to be generic enough to handle all the different enviroments. Clients can use the web app to manage, schedule, and request appointments.",
+        "description": "Designed, built, and delivered a web app to Evolucion Medica. The app was designed to change the data shown based on the URL, and thus this project also needed for the web app to be generic enough to handle all the different enviroments. Clients can use the web app to manage, schedule, and request appointments.",
         "technologies": [
           "React",
           "React Router",
