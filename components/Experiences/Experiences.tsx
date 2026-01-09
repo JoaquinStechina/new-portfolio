@@ -50,7 +50,7 @@ const Experiences: React.FC = () => {
   return (
     <div
       id="experience"
-      className="flex flex-col justify-center items-center w-1/2 mt-[5%] mb-[5%]"
+      className="flex flex-col justify-center items-center max-lg:w-3/4 lg:w-1/2 mt-[5%] mb-[5%] max-md:mt-3 max-md:mb-3"
     >
       <h1 className="text-4xl mb-8">My Experiences</h1>
       <Accordion

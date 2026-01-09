@@ -32,13 +32,15 @@ const SideBar: React.FC = () => {
 
   return (
     <div
-      className={`z-20 max-w-1/16 flex flex-col items-center justify-center fixed h-screen bg-transparent transform transition-all duration-700 ease-out ${
-        isLoaded ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
+      className={`max-lg:flex-row z-20 max-lg:max-h-1/4 max-lg:w-screen lg:h-screen lg:max-w-1/16 flex flex-col items-center justify-center fixed max-lg:bg-background lg:bg-transparent transform transition-all duration-700 ease-out ${
+        isLoaded
+          ? "max-lg:translate-y-0 lg:translate-x-0 opacity-100"
+          : "max-lg:-translate-y-full lg:-translate-x-full opacity-0"
       }`}
     >
-      <div className="w-0.5 h-full bg-white mb-4" />
+      <div className="max-lg:h-0.5 max-lg:w-full lg:w-0.5 lg:h-full bg-white lg:mb-4" />
       <div
-        className="m-4"
+        className="max-lg:m-2 lg:m-4"
         style={getIconStyle("instagram")}
         onMouseEnter={() => setHoveredIcon("instagram")}
         onMouseLeave={() => setHoveredIcon(null)}
@@ -52,7 +54,7 @@ const SideBar: React.FC = () => {
         </a>
       </div>
       <div
-        className="m-4"
+        className="max-lg:m-2 lg:m-4"
         style={getIconStyle("github")}
         onMouseEnter={() => setHoveredIcon("github")}
         onMouseLeave={() => setHoveredIcon(null)}
@@ -66,7 +68,7 @@ const SideBar: React.FC = () => {
         </a>
       </div>
       <div
-        className="m-4"
+        className="max-lg:m-2 lg:m-4"
         style={getIconStyle("linkedin")}
         onMouseEnter={() => setHoveredIcon("linkedin")}
         onMouseLeave={() => setHoveredIcon(null)}
@@ -79,7 +81,7 @@ const SideBar: React.FC = () => {
           <Linkedin color="white" />
         </a>
       </div>
-      <div className="w-0.5 h-full bg-white mt-4" />
+      <div className="max-lg:h-0.5 max-lg:w-full lg:w-0.5 lg:h-full bg-white lg:mt-4" />
     </div>
   );
 };

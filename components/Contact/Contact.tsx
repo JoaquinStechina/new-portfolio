@@ -123,7 +123,6 @@ const Contact: React.FC = () => {
         message: errorMessage,
       });
 
-      // Limpiar mensaje de error después de 5 segundos
       setTimeout(() => {
         setStatus({ type: null, message: "" });
       }, 5000);
@@ -135,7 +134,7 @@ const Contact: React.FC = () => {
   return (
     <div
       id="contact"
-      className="flex items-center justify-center h-screen w-1/2 p-4"
+      className="flex items-center justify-center max-lg:mt-3 lg:h-screen max-lg:w-3/4 lg:w-1/2 p-4"
     >
       <div className="w-full max-w-lg space-y-8">
         <div className="text-center space-y-2">

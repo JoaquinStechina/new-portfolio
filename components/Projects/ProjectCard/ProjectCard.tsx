@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           </h2>
         </CardTitle>
       </CardHeader>
-      <CardContent className="h-[260px]">
+      <CardContent className="max-lg:flex max-lg:flex-col max-lg:items-center">
         <Image
           src={project.imageLink || ""}
           fill={false}

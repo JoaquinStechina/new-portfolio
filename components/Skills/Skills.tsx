@@ -9,11 +9,10 @@ import NextJS from "../Icons/NextJS/NextJS";
 import NodeJS from "../Icons/NodeJS/NodeJS";
 import React from "../Icons/React/React";
 import Spring from "../Icons/Spring/Spring";
+import Database from "@/components/Icons/Database/Database";
 import Typescript from "../Icons/Typescript/Typescript";
 import LogoLoop from "../LogoLoop";
-import BackendCard from "./BackendCard/BackendCard";
-import DesignCard from "./DesignCard/DesignCard";
-import FrontendCard from "./FrontendCard/FrontendCard";
+import SkillCard, { SkillCardContent } from "./SkillCard";
 
 const techLogos = [
   {
@@ -54,17 +53,57 @@ const techLogos = [
   { node: <NodeJS />, title: "NodeJS", href: "https://nodejs.org/en" },
 ];
 
+type Title = "Frontend" | "Backend" | "Design";
+
+const iconMap: Record<Title, React.ComponentType> = {
+  Frontend: React,
+  Backend: Database,
+  Design: CSS,
+};
+
+const skillArray: SkillCardContent[] = [
+  {
+    title: "Backend",
+    color: "red-500",
+    icon: iconMap.Backend,
+    content:
+      "Worked with Java, Spring, and Hibernate creating APIs for different digital products.",
+  },
+  {
+    title: "Frontend",
+    color: "blue-700",
+    icon: iconMap.Frontend,
+    content:
+      "Passionate about UI/UX. Over 3 years of development experience in HTML, CSS, JS, React and NextJS frameworks.",
+  },
+  {
+    title: "Design",
+    color: "yellow-500",
+    icon: iconMap.Design,
+    content:
+      "Skilled in creating and designing high-end visuals and animations with CSS3 and Tailwind.",
+  },
+];
+
 const Skills: React.FC = () => {
+  const lastIndex = skillArray.length - 1;
   return (
     <div
       id="skills"
-      className="flex flex-col justify-center items-center w-1/2 h-screen"
+      className="flex flex-col justify-center items-center max-lg: w-3/4 md:h-screen"
     >
       <h1 className="text-4xl mb-8">My Expertise</h1>
-      <div className="flex justify-center w-full mb-8">
-        <BackendCard />
-        <FrontendCard />
-        <DesignCard />
+      <div className="flex justify-center w-full mb-8 max-md:flex-col max-md:items-center">
+        {skillArray.map((skill, i) => {
+          return (
+            <SkillCard
+              key={"skillID" + i}
+              index={i}
+              lastIndex={lastIndex}
+              skill={skill}
+            />
+          );
+        })}
       </div>
       <LogoLoop
         logos={techLogos}
