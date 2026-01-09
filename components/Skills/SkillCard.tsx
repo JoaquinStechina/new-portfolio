@@ -33,11 +33,11 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, index, lastIndex }) => {
     >
       <CardHeader>
         <CardTitle className="text-xl flex max-lg:flex-col justify-center items-center">
-          <skill.icon color="white" />
+          <skill.icon color={"white"} />
           <h2 className="relative inline-block text-2xl font-bold">
             <span className="relative z-10">{skill.title}</span>
             <div
-              className={`absolute left-1 top-4 w-[calc(100%)] h-4 bg-${skill.color}/80 z-9`}
+              className={`absolute left-1 top-4 w-[calc(100%)] h-4 ${skill.color} z-9`}
             />
           </h2>
         </CardTitle>

@@ -66,21 +66,21 @@ const iconMap: Record<Title, React.ComponentType> = {
 const skillArray: SkillCardContent[] = [
   {
     title: "Backend",
-    color: "red-500",
+    color: "bg-red-500/80",
     icon: iconMap.Backend,
     content:
       "Worked with Java, Spring, and Hibernate creating APIs for different digital products.",
   },
   {
     title: "Frontend",
-    color: "blue-700",
+    color: "bg-blue-500/80",
     icon: iconMap.Frontend,
     content:
       "Passionate about UI/UX. Over 3 years of development experience in HTML, CSS, JS, React and NextJS frameworks.",
   },
   {
     title: "Design",
-    color: "yellow-500",
+    color: "bg-yellow-500/80",
     icon: iconMap.Design,
     content:
       "Skilled in creating and designing high-end visuals and animations with CSS3 and Tailwind.",
