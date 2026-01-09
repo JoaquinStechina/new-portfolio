@@ -1,3 +1,4 @@
+"use client";
 import Angular from "../Icons/Angular/Angular";
 import CSS from "../Icons/CSS/CSS";
 import Hibernate from "../Icons/Hibernate/Hibernate";
@@ -13,6 +14,7 @@ import Database from "@/components/Icons/Database/Database";
 import Typescript from "../Icons/Typescript/Typescript";
 import LogoLoop from "../LogoLoop";
 import SkillCard, { SkillCardContent } from "./SkillCard";
+import { useState, useEffect } from "react";
 
 const techLogos = [
   {
@@ -87,6 +89,24 @@ const skillArray: SkillCardContent[] = [
 
 const Skills: React.FC = () => {
   const lastIndex = skillArray.length - 1;
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.innerWidth);
+
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
+
   return (
     <div
       id="skills"
@@ -107,11 +127,10 @@ const Skills: React.FC = () => {
       </div>
       <LogoLoop
         logos={techLogos}
-        className=""
         speed={40}
         direction="left"
         logoHeight={48}
-        width={600}
+        width={windowWidth > 600 ? 600 : windowWidth}
         gap={20}
         hoverSpeed={0}
         scaleOnHover
