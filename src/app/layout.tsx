@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import SideBar from "../../components/SideBar/SideBar";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${myFont.variable} antialiased`}>
         <SideBar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
