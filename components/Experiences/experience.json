@@ -41,8 +41,28 @@
     "company": "Globant",
     "jobs": [
       {
-        "jobTitle": "Web UI Developer",
-        "description": "Worked on the refactor of BBVA bank's mobile app under Globant's supervision. The refactor was from Polymorph to Lit Element for their mobile app.",
+        "jobTitle": "Web UI Developer for Royal Caribbean",
+        "description": "Contributed to the implementation of automated, dynamic email campaigns for key initiatives such as Courtesy Retention, Watch Lists, Cart Abandonment Offers, and targeted Casino promotions. Developed and maintained responsive, multilingual email templates using HTML, CSS, JavaScript, and AMPScript, ensuring the right message was delivered to the right user at the optimal time. Additionally, supported frontend development using React, TypeScript, and Redux, applying automated testing practices with Jest, Cypress, and Mock Service Worker to ensure quality and reliability.",
+        "technologies": [
+          "React",
+          "Redux",
+          "JavaScript",
+          "TypeScript",
+          "CSS",
+          "Jira",
+          "HTML",
+          "Cypress",
+          "Jest",
+          "Mock Service Worker (MSW)"
+        ],
+        "startMonth": "July",
+        "startYear": "2025",
+        "endMonth": "October",
+        "endYear": "2025"
+      },
+      {
+        "jobTitle": "Web UI Developer for BBVA",
+        "description": "Developed web interfaces for banking operations in a production environment. Implemented a critical banking transfer feature and led the migration of components to Lit Element, achieving an approximate 30% performance improvement. Ensured compliance with financial standards and UI/UX best practices, and actively participated in code reviews to maintain high levels of code quality and security.",
         "technologies": [
           "Lit",
           "Polymorph",
@@ -53,12 +73,12 @@
         ],
         "startMonth": "January",
         "startYear": "2025",
-        "endMonth": "March",
+        "endMonth": "June",
         "endYear": "2025"
       },
       {
-        "jobTitle": "Web UI Developer",
-        "description": "Worked on 'Academy' project, an internal management tool, for Globant's DOJO enviroment. I was responsible for UI creation, unit testing, and correct connection with enterprise APIs.",
+        "jobTitle": "Web UI Developer for Academy",
+        "description": "Developed and maintained an internal educational platform used by over 10,000 employees globally. Implemented SSO authentication integrated with Globant corporate APIs, replacing the traditional login flow and significantly improving the onboarding experience. Also developed a complete user registration module with customized flows based on user type (employees, candidates, and partners), with a strong focus on frontend scalability, maintainability, and best practices.",
         "technologies": [
           "Next.js",
           "React",
