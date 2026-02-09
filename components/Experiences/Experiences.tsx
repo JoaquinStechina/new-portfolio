@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 import { Accordion } from "../ui/accordion";
 import ExperienceAccordionItem from "./ExperienceAccordionItem";
 import { Experience } from "@/src/types/ExperienceProps";
-import Rocking from "../Icons/Rocking/Rocking";
-import UTN from "../Icons/UTN/UTN";
-import Globant from "../Icons/Globant/Globant";
-import JPSystems from "../Icons/JPSystems/JPSystems";
+import { Globant, JPSystems, Rocking, UTN } from "@/components/Icons";
 
 type CompanyName = "Rocking" | "UTN" | "Globant" | "JPSystems";
 

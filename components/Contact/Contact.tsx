@@ -14,7 +14,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import Whatsapp from "../Icons/Whatsapp/Whatsapp";
+import { Whatsapp } from "@/components/Icons";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({

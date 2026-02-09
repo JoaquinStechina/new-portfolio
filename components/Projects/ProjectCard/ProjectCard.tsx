@@ -1,4 +1,4 @@
-import GithubRounded from "@/components/Icons/Github/GithubRounded";
+import { GithubRounded } from "@/components/Icons";
 import {
   Card,
   CardContent,

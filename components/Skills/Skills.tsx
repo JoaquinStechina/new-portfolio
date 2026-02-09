@@ -1,17 +1,20 @@
 "use client";
-import Angular from "../Icons/Angular/Angular";
-import CSS from "../Icons/CSS/CSS";
-import Hibernate from "../Icons/Hibernate/Hibernate";
-import HTMLIcon from "../Icons/HTMLIcon/HTMLIcon";
-import Java from "../Icons/Java/Java";
-import Javascript from "../Icons/Javascript/Javascript";
-import MySQL from "../Icons/MySQL/MySQL";
-import NextJS from "../Icons/NextJS/NextJS";
-import NodeJS from "../Icons/NodeJS/NodeJS";
-import React from "../Icons/React/React";
-import Spring from "../Icons/Spring/Spring";
-import Database from "@/components/Icons/Database/Database";
-import Typescript from "../Icons/Typescript/Typescript";
+import {
+  Angular,
+  CSS,
+  Hibernate,
+  HTMLIcon,
+  Java,
+  Javascript,
+  MySQL,
+  NextJS,
+  NodeJS,
+  React,
+  Spring,
+  Typescript,
+  Database,
+} from "@/components/Icons";
+
 import LogoLoop from "../LogoLoop";
 import SkillCard, { SkillCardContent } from "./SkillCard";
 import { useState, useEffect } from "react";

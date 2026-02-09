@@ -1,8 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Github from "../Icons/Github/Github";
-import Instagram from "../Icons/Instagram/Instagram";
-import Linkedin from "../Icons/Linkedin/Linkedin";
+import { Github, Instagram, Linkedin } from "@/components/Icons";
 
 const SideBar: React.FC = () => {
   const [hoveredIcon, setHoveredIcon] = useState<string | null>(null);
