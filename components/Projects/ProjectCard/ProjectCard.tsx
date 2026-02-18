@@ -25,6 +25,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           fill={false}
           height={200}
           width={430}
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="h-[200px] pb-2"
           alt=""
         />

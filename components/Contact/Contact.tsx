@@ -37,11 +37,13 @@ const Contact: React.FC = () => {
 
   const contactInfo = [
     {
+      id: "contactInfo-1",
       icon: <Mail className="h-4 w-4" />,
       text: "joaquinstechina12@gmail.com",
       href: "mailto:joaquinstechina12@gmail.com",
     },
     {
+      id: "contactInfo-2",
       icon: <Whatsapp size={20} color="white" />,
       text: "+54 9 3482-204125",
       href: "https://wa.me/+543482204125",
@@ -145,9 +147,9 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4">
-          {contactInfo.map((info, index) => (
+          {contactInfo.map((info) => (
             <a
-              key={index}
+              key={info.id}
               href={info.href}
               target="_blank"
               rel="noopener noreferrer"

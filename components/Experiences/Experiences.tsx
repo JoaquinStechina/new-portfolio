@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useReducer } from "react";
 import { Accordion } from "../ui/accordion";
 import ExperienceAccordionItem from "./ExperienceAccordionItem";
-import { Experience } from "@/src/types/ExperienceProps";
 import { Globant, JPSystems, Rocking, UTN } from "@/components/Icons";
+import { Action, initialState, reducer, State } from "./ExperiencesReducer";
 
 type CompanyName = "Rocking" | "UTN" | "Globant" | "JPSystems";
 
@@ -16,32 +16,46 @@ const iconMap: Record<CompanyName, React.ComponentType> = {
 };
 
 const Experiences: React.FC = () => {
-  const [experience, setExperience] = useState<Experience[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [state, dispatch] = useReducer(
+    reducer as React.Reducer<State, Action>,
+    initialState
+  );
 
+  const { experience, loading, error } = state;
   const experienceLength = experience.length;
 
   useEffect(() => {
-    try {
-      // Importación estática
-      import("./experience.json").then((data) => {
-        setExperience(data.default || data);
-        setLoading(false);
+    import("./experience.json")
+      .then((data) => {
+        dispatch({
+          type: "FETCH_SUCCESS",
+          payload: data.default || data,
+        });
+      })
+      .catch(() => {
+        dispatch({
+          type: "FETCH_ERROR",
+          payload: "Error loading experiences",
+        });
       });
-    } catch (err) {
-      setError("Error cargando experiencias");
-      setLoading(false);
-    }
   }, []);
 
-  // Si estás cargando o hay error, muestra un estado
   if (loading) {
-    return <div>Cargando experiencias...</div>;
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[300px] text-center">
+        <div className="w-12 h-12 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin mb-4"></div>
+        <p className="text-gray-600">Loading experiencies...</p>
+      </div>
+    );
   }
 
   if (error) {
-    return <div>{error}</div>;
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[300px] text-center">
+        <h3 className="text-xl font-semibold text-red-600 mb-2">Error</h3>
+        <p className="text-gray-700">{error}</p>
+      </div>
+    );
   }
 
   return (
