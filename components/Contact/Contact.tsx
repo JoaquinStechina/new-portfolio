@@ -7,7 +7,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import {
   Mail,
-  Phone,
   Send,
   Loader2,
   CheckCircle,
@@ -86,7 +85,7 @@ const Contact: React.FC = () => {
         }),
       };
 
-      const response = await emailjs.send(
+      await emailjs.send(
         EMAILJS_CONFIG.serviceId,
         EMAILJS_CONFIG.templateId,
         templateParams,
@@ -142,7 +141,7 @@ const Contact: React.FC = () => {
         <div className="text-center space-y-2">
           <h1 className="text-4xl mb-2">My Contact</h1>
           <p className="text-[var(--foreground)] opacity-70">
-            Do you have a project in mind? Let's talk.
+            Do you have a project in mind? Let&apos;s talk.
           </p>
         </div>
 

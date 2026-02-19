@@ -74,6 +74,7 @@ const SideBar: React.FC = () => {
         <a
           href="https://www.linkedin.com/in/joaquinstechina/"
           target="_blank"
+          rel="noopener noreferrer"
           className="block"
         >
           <Linkedin color="white" />

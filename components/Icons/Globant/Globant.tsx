@@ -1,7 +1,6 @@
 import { SVGProps } from "@/src/types/SVGProps";
 
 const Globant: React.FC<SVGProps> = ({
-  color = "#fff",
   height = 50,
   width = 50,
   size,

@@ -1,3 +1,4 @@
+import type { Reducer } from "react";
 import { Project } from "@/src/types/ProjectProps";
 
 export type State = {
@@ -16,7 +17,7 @@ export type Action =
   | { type: "FETCH_SUCCESS"; payload: Project[] }
   | { type: "FETCH_ERROR"; payload: string };
 
-export function reducer(state: State, action: Action): State {
+export const reducer: Reducer<State, Action> = (state, action) => {
   switch (action.type) {
     case "FETCH_SUCCESS":
       return {
@@ -35,4 +36,4 @@ export function reducer(state: State, action: Action): State {
     default:
       return state;
   }
-}
+};

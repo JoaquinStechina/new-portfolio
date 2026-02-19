@@ -36,6 +36,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           <a
             href={project.link}
             target="_blank"
+            rel="noopener noreferrer"
             className="block hover:scale-105 transition"
           >
             <GithubRounded color="white" />

@@ -4,7 +4,7 @@ import { useEffect, useReducer } from "react";
 import { Accordion } from "../ui/accordion";
 import ExperienceAccordionItem from "./ExperienceAccordionItem";
 import { Globant, JPSystems, Rocking, UTN } from "@/components/Icons";
-import { Action, initialState, reducer, State } from "./ExperiencesReducer";
+import { initialState, reducer } from "./ExperiencesReducer";
 
 type CompanyName = "Rocking" | "UTN" | "Globant" | "JPSystems";
 
@@ -16,10 +16,7 @@ const iconMap: Record<CompanyName, React.ComponentType> = {
 };
 
 const Experiences: React.FC = () => {
-  const [state, dispatch] = useReducer(
-    reducer as React.Reducer<State, Action>,
-    initialState
-  );
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const { experience, loading, error } = state;
   const experienceLength = experience.length;
@@ -44,7 +41,7 @@ const Experiences: React.FC = () => {
     return (
       <div className="flex flex-col items-center justify-center min-h-[300px] text-center">
         <div className="w-12 h-12 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin mb-4"></div>
-        <p className="text-gray-600">Loading experiencies...</p>
+        <p className="text-gray-600">Loading experiences...</p>
       </div>
     );
   }

@@ -1,3 +1,4 @@
+import type { Reducer } from "react";
 import { Experience } from "@/src/types/ExperienceProps";
 
 export type State = {
@@ -16,7 +17,7 @@ export type Action =
   | { type: "FETCH_SUCCESS"; payload: Experience[] }
   | { type: "FETCH_ERROR"; payload: string };
 
-export function reducer(state: State, action: Action): State {
+export const reducer: Reducer<State, Action> = (state, action) => {
   switch (action.type) {
     case "FETCH_SUCCESS":
       return {

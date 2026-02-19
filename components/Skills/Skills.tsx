@@ -17,7 +17,6 @@ import {
 
 import LogoLoop from "../LogoLoop";
 import SkillCard, { SkillCardContent } from "./SkillCard";
-import { useState, useEffect } from "react";
 
 const techLogos = [
   {
@@ -26,7 +25,7 @@ const techLogos = [
     href: "https://nextjs.org/",
   },
   { node: <React />, title: "React", href: "https://react.dev" },
-  { node: <Angular />, title: "React", href: "https://angular.dev/" },
+  { node: <Angular />, title: "Angular", href: "https://angular.dev/" },
   { node: <HTMLIcon />, title: "HTML5", href: "https://html.spec.whatwg.org/" },
   {
     node: <CSS color="#1172B8" />,
@@ -92,28 +91,11 @@ const skillArray: SkillCardContent[] = [
 
 const Skills: React.FC = () => {
   const lastIndex = skillArray.length - 1;
-  const [windowWidth, setWindowWidth] = useState(0);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setWindowWidth(window.innerWidth);
-
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
-
-      window.addEventListener("resize", handleResize);
-
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
-  }, []);
-
+  
   return (
     <div
       id="skills"
-      className="flex flex-col justify-center items-center max-lg: w-3/4 md:h-screen"
+      className="flex flex-col justify-center items-center max-lg:w-3/4 md:h-screen"
     >
       <h1 className="text-4xl mb-8">My Expertise</h1>
       <div className="flex justify-center w-full mb-8 max-md:flex-col max-md:items-center">
@@ -128,19 +110,20 @@ const Skills: React.FC = () => {
           );
         })}
       </div>
-      <LogoLoop
-        logos={techLogos}
-        speed={40}
-        direction="left"
-        logoHeight={48}
-        width={windowWidth > 600 ? 600 : windowWidth}
-        gap={20}
-        hoverSpeed={0}
-        scaleOnHover
-        fadeOut
-        fadeOutColor="var(--secondary)"
-        ariaLabel="Technology partners"
-      />
+      <div className="w-full max-w-[600px]">
+        <LogoLoop
+          logos={techLogos}
+          speed={40}
+          direction="left"
+          logoHeight={48}
+          gap={20}
+          hoverSpeed={0}
+          scaleOnHover
+          fadeOut
+          fadeOutColor="var(--secondary)"
+          ariaLabel="Technology partners"
+        />
+      </div>
     </div>
   );
 };
