@@ -9,7 +9,8 @@
       "Bash(npx sharp-cli -i public/ProjectImages/evolucion-medica.png -o public/ProjectImages/evolucion-medica-opt.png -- pngquant)",
       "Bash(npx sharp-cli -i public/ProjectImages/evolucion-medica.png -o public/ProjectImages/evolucion-medica.webp --format webp --quality 80)",
       "Bash(npx sharp-cli -i public/ProjectImages/digital-booking.png -o public/ProjectImages/digital-booking.webp --format webp --quality 70)",
-      "Bash(ls -la f:/Proyectos/new-portfolio/public/ProjectImages/digital-booking.*)"
+      "Bash(ls -la f:/Proyectos/new-portfolio/public/ProjectImages/digital-booking.*)",
+      "Bash(npm uninstall @radix-ui/react-separator)"
     ]
   }
 }

@@ -12,7 +12,6 @@ import {
   CheckCircle,
   AlertCircle,
 } from "lucide-react";
-import emailjs from "@emailjs/browser";
 import { Whatsapp } from "@/components/Icons";
 
 const Contact: React.FC = () => {
@@ -85,6 +84,7 @@ const Contact: React.FC = () => {
         }),
       };
 
+      const emailjs = (await import("@emailjs/browser")).default;
       await emailjs.send(
         EMAILJS_CONFIG.serviceId,
         EMAILJS_CONFIG.templateId,
