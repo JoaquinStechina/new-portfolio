@@ -7,11 +7,17 @@ import SideBar from "../../components/SideBar/SideBar";
 const myFont = localFont({
   src: "./Outfit-VariableFont_wght.ttf",
   variable: "--font-outfit",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Portfolio - Joaquin Stechina",
-  description: "Portfolio de Joaquin Stechina",
+  description: "Full-Stack Developer — React, Next.js, Java, Spring Boot",
+  openGraph: {
+    title: "Joaquin Stechina — Portfolio",
+    description: "Full-Stack Developer — React, Next.js, Java, Spring Boot",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

@@ -9,24 +9,27 @@ const SideBar: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoaded(true);
-    }, 1000);
+    }, 200);
     return () => clearTimeout(timer);
   }, []);
 
-  const getIconStyle = (iconName: string) => {
-    const isHovered = hoveredIcon === iconName;
-    const otherHovered = hoveredIcon && hoveredIcon !== iconName;
-
-    return {
-      transform: isHovered
-        ? "scale(1)"
-        : otherHovered
-        ? "scale(0.75)"
-        : "scale(1)",
-      opacity: isHovered ? 1 : otherHovered ? 0.5 : 1,
-      transition: "all 400ms",
-    };
-  };
+  const icons = [
+    {
+      name: "instagram",
+      href: "https://www.instagram.com/joaquin_stechina",
+      Icon: Instagram,
+    },
+    {
+      name: "github",
+      href: "https://github.com/JoaquinStechina",
+      Icon: Github,
+    },
+    {
+      name: "linkedin",
+      href: "https://www.linkedin.com/in/joaquinstechina/",
+      Icon: Linkedin,
+    },
+  ];
 
   return (
     <div
@@ -37,49 +40,27 @@ const SideBar: React.FC = () => {
       }`}
     >
       <div className="max-lg:h-0.5 max-lg:w-full lg:w-0.5 lg:h-full bg-white lg:mb-4" />
-      <div
-        className="max-lg:m-2 lg:m-4"
-        style={getIconStyle("instagram")}
-        onMouseEnter={() => setHoveredIcon("instagram")}
-        onMouseLeave={() => setHoveredIcon(null)}
-      >
-        <a
-          href="https://www.instagram.com/joaquin_stechina"
-          target="_blank"
-          className="block"
+      {icons.map(({ name, href, Icon }) => (
+        <div
+          key={name}
+          className={`max-lg:m-2 lg:m-4 transition-all duration-400 ${
+            hoveredIcon && hoveredIcon !== name
+              ? "opacity-50 scale-75"
+              : "opacity-100 scale-100"
+          }`}
+          onMouseEnter={() => setHoveredIcon(name)}
+          onMouseLeave={() => setHoveredIcon(null)}
         >
-          <Instagram color="white" />
-        </a>
-      </div>
-      <div
-        className="max-lg:m-2 lg:m-4"
-        style={getIconStyle("github")}
-        onMouseEnter={() => setHoveredIcon("github")}
-        onMouseLeave={() => setHoveredIcon(null)}
-      >
-        <a
-          href="https://github.com/JoaquinStechina"
-          target="_blank"
-          className="block"
-        >
-          <Github color="white" />
-        </a>
-      </div>
-      <div
-        className="max-lg:m-2 lg:m-4"
-        style={getIconStyle("linkedin")}
-        onMouseEnter={() => setHoveredIcon("linkedin")}
-        onMouseLeave={() => setHoveredIcon(null)}
-      >
-        <a
-          href="https://www.linkedin.com/in/joaquinstechina/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
-          <Linkedin color="white" />
-        </a>
-      </div>
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <Icon color="white" />
+          </a>
+        </div>
+      ))}
       <div className="max-lg:h-0.5 max-lg:w-full lg:w-0.5 lg:h-full bg-white lg:mt-4" />
     </div>
   );

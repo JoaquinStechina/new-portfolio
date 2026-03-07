@@ -4,7 +4,7 @@
     "name": "Evolucion Medica",
     "link": "https://github.com/JoaquinStechina/evolucion-medica",
     "description": "Generic web page for Evolucion Medica project under Rocking supervision, it allows to connect to different URLs and generate a web page for EV's clients. Made using React, CSS, and TypeScript.",
-    "imageLink": "/ProjectImages/evolucion-medica.png"
+    "imageLink": "/ProjectImages/evolucion-medica.webp"
   },
   {
     "id": "project-2",

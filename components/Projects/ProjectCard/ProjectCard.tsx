@@ -22,12 +22,12 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
       <CardContent className="max-lg:flex max-lg:flex-col max-lg:items-center">
         <Image
           src={project.imageLink || ""}
-          fill={false}
           height={200}
           width={430}
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="h-[200px] pb-2"
-          alt=""
+          className="h-[200px] w-full object-cover pb-2"
+          alt={`Screenshot of ${project.name}`}
+          loading="lazy"
         />
         <p>{project.description}</p>
       </CardContent>

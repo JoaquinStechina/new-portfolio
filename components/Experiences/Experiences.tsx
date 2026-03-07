@@ -1,10 +1,7 @@
-"use client";
-
-import { useEffect, useReducer } from "react";
+import experienceData from "./experience.json";
 import { Accordion } from "../ui/accordion";
 import ExperienceAccordionItem from "./ExperienceAccordionItem";
 import { Globant, JPSystems, Rocking, UTN } from "@/components/Icons";
-import { initialState, reducer } from "./ExperiencesReducer";
 
 type CompanyName = "Rocking" | "UTN" | "Globant" | "JPSystems";
 
@@ -16,44 +13,7 @@ const iconMap: Record<CompanyName, React.ComponentType> = {
 };
 
 const Experiences: React.FC = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
-
-  const { experience, loading, error } = state;
-  const experienceLength = experience.length;
-
-  useEffect(() => {
-    import("./experience.json")
-      .then((data) => {
-        dispatch({
-          type: "FETCH_SUCCESS",
-          payload: data.default || data,
-        });
-      })
-      .catch(() => {
-        dispatch({
-          type: "FETCH_ERROR",
-          payload: "Error loading experiences",
-        });
-      });
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-[300px] text-center">
-        <div className="w-12 h-12 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin mb-4"></div>
-        <p className="text-gray-600">Loading experiences...</p>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-[300px] text-center">
-        <h3 className="text-xl font-semibold text-red-600 mb-2">Error</h3>
-        <p className="text-gray-700">{error}</p>
-      </div>
-    );
-  }
+  const experienceLength = experienceData.length;
 
   return (
     <div
@@ -67,7 +27,7 @@ const Experiences: React.FC = () => {
         className="w-full gap-1 rounded-2xl border-2 border-[var(--primary)]"
         defaultValue="item-0"
       >
-        {experience.map((e, i) => {
+        {experienceData.map((e, i) => {
           const IconComponent = iconMap[e.icon as CompanyName];
           return (
             <ExperienceAccordionItem

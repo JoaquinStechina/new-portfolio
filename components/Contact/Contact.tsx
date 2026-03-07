@@ -107,8 +107,6 @@ const Contact: React.FC = () => {
         setStatus({ type: null, message: "" });
       }, 5000);
     } catch (error) {
-      console.error("Error al enviar el email:", error);
-
       let errorMessage = "There was an error sending the message. Try again.";
 
       if (error instanceof Error) {
